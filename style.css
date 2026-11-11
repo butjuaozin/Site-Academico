@@ -1,0 +1,120 @@
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff3c4;
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(255, 183, 197, 0.55) 0, transparent 35%),
+        radial-gradient(circle at 85% 15%, rgba(167, 219, 255, 0.60) 0, transparent 35%),
+        radial-gradient(circle at 80% 85%, rgba(190, 240, 190, 0.55) 0, transparent 35%),
+        linear-gradient(135deg, #fff3c4, #ffe0f0 50%, #d9f0ff);
+    background-attachment: fixed;
+}
+
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    padding: 20px 28px;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+}
+
+
+header { text-align: center; }
+
+h1 { color: #d6336c; margin-bottom: 4px; }
+h2 { color: #1c7ed6; border-bottom: 3px dotted #ffd6e7; padding-bottom: 6px; }
+h3 { color: #2f9e44; }
+
+/* navegação */
+nav ul {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #ffd6e7;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover { background: #d6336c; color: #fff; }
+
+a { color: #d6336c; }
+
+/* imagem e citação */
+img { max-width: 100%; height: auto; border-radius: 12px; }
+figure { text-align: center; margin: 20px 0; }
+blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 6px solid #ffd43b;
+    background: #fff9db;
+    border-radius: 8px;
+    font-style: italic;
+}
+mark { background: #ffe066; padding: 0 4px; border-radius: 4px; }
+
+/* tabela: menor e centralizada */
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+th, td { padding: 8px 12px; border: 1px solid #f1c0d3; text-align: center; }
+thead th { background: #ffd6e7; }
+tbody tr:nth-child(even) { background: #fff5f9; }
+tbody tr:hover { background: #fff3bf; }
+tfoot { background: #fff3c4; }
+caption { padding: 8px; }
+
+/* formulário */
+fieldset {
+    margin-bottom: 16px;
+    padding: 12px 18px;
+    border: 2px solid #a5d8ff;
+    border-radius: 12px;
+}
+legend { padding: 0 8px; font-weight: bold; color: #1c7ed6; }
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    width: 100%;
+    max-width: 420px;
+    padding: 8px;
+    border: 1px solid #adb5bd;
+    border-radius: 8px;
+    font-family: inherit;
+}
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #d6336c;
+    box-shadow: 0 0 0 3px rgba(214, 51, 108, 0.20);
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 999px;
+    background: #d6336c;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button[type="reset"] { background: #868e96; }
+button:hover { opacity: 0.85; }
+
+/* rodapé */
+footer { text-align: center; }
+footer ul { list-style: none; padding: 0; }
